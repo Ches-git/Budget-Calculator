@@ -29,11 +29,11 @@ optionalExpensesBtn.disabled = true;
 countBtn.disabled = true;
 
 startBtn.addEventListener('click', () => {
-    time = prompt('Введите дату в формате YYYY-MM-DD', '');
-    money = +prompt("Ваш бюджет на месяц?", '');
+    time = prompt('Write the date in format: YYYY-MM-DD', '');
+    money = +prompt("Your month budget?", '');
 
     while (isNaN(money) || money == '' || money == null) {
-        money = prompt("Ваш бюджет?", "");
+        money = prompt("Your month budget?", "");
     }
     appData.budget = money;
     appData.timeData = time;
@@ -76,16 +76,16 @@ countBtn.addEventListener('click', () => {
         appData.moneyPerDay = ((appData.budget - +expensesValue.textContent) / 30).toFixed();
         dayBudgetValue.textContent = appData.moneyPerDay;
         if (appData.moneyPerDay < 100) {
-            levelValue.textContent = 'Минимальный уровень достатка';
+            levelValue.textContent = 'Minimal wealth level';
         } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
-            levelValue.textContent = 'Средний уровень достатка';
+            levelValue.textContent = 'Medium wealth level';
         } else if (appData.moneyPerDay > 2000) {
-            levelValue.textContent = 'Высокий уровень достатка';
+            levelValue.textContent = 'High wealth level';
         } else {
-            levelValue.textContent = 'Произошла ошибка';
+            levelValue.textContent = 'ERROR';
         }
     } else {
-        dayBudgetValue.textContent = 'Произошла ошибка';
+        dayBudgetValue.textContent = 'ERROR';
     }
 });
 
