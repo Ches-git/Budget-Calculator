@@ -27,32 +27,33 @@
             <button class="expenses-item-btn">Confirm</button>
             
             <div class="optionalexpenses"> Enter optional expenses</div>
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1" >
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
-			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1" placeholder="Position 1(Price)">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2" placeholder="Position 2(Price)">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3" placeholder="Position 3(Price)">
             <button class="optionalexpenses-btn">Confirm</button>
             
-            <div class="count-budget">Daily budget calculation</div>
-            <button class="count-budget-btn">Calculate</button>
+            <div class="count-budget"></div>
             
-            <div class="choose-income-label"> Enter articles of possible income by comma</div>.
+            <button class="count-budget-btn">Calculate daily <br>budget</button>
+
+            <div class="choose-income-label"> List additional incomes <br> (Separetaed by comma)</div>
             <input class="choose-income" type="text" id="income">
             
             <div class="checksavings">There are savings: 
                 <input id="savings" type="checkbox" />
             </div>
-            <label for="sum">Total</label>
+            <label for="sum">Total :</label>
 			<input class="choose-sum" id="sum" type="text">
-			<label for="percent">Percent</label>
+			<label for="percent">Growth rate:</label>
             <input class="choose-percent" id="percent" type="text">
-            
+
             <div class="open">
                 <button class="start" id="start">Start calculation</button>
             </div>
         </div>
         <div class="result">
             <div class="result-table">
-                <div class="budget">income: </div>
+                <div class="budget">Income: </div>
                 <div class="budget-value"></div>
     
                 <div class="daybudget">Budget for 1 day: </div>

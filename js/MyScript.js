@@ -28,6 +28,10 @@ expensesBtn.disabled = true;
 optionalExpensesBtn.disabled = true;
 countBtn.disabled = true;
 
+expensesBtn.style.background=  "Grey";
+optionalExpensesBtn.style.background=  "Grey";
+countBtn.style.background=  "Grey";
+
 startBtn.addEventListener('click', () => {
     time = prompt('Write the date in format: YYYY-MM-DD', '');
     money = +prompt("Your month budget?", '');
@@ -45,6 +49,11 @@ startBtn.addEventListener('click', () => {
     expensesBtn.disabled = false;
     optionalExpensesBtn.disabled = false;
     countBtn.disabled = false;
+
+    expensesBtn.style.backgroundImage = "linear-gradient(336deg,#ffbd75,#ff964b),linear-gradient(#fff,#fff)";
+    optionalExpensesBtn.style.backgroundImage = "linear-gradient(336deg,#ffbd75,#ff964b),linear-gradient(#fff,#fff)";
+    countBtn.style.backgroundImage= "linear-gradient(336deg,#ffbd75,#ff964b),linear-gradient(#fff,#fff)";
+
 });
 
 expensesBtn.addEventListener('click', () => {
